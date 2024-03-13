@@ -1,0 +1,46 @@
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner in = new Scanner(System.in);
+		
+		Funcionario Funcionario01 = new Funcionario();
+		
+
+		Funcionario01.SalarioBruto = in.nextDouble();
+		Funcionario01.Nome = "Pedro";
+		Funcionario01.Imposto = Funcionario01.SalarioBruto * 15 / 100 ;
+		System.out.print("Digite o salário bruto do "+Funcionario01.Nome+ " : ");
+		
+		System.out.print("Quanto quer aumentar o salario do "+Funcionario01.Nome+": ");
+		Funcionario01.Aumento = in.nextDouble();
+		
+		System.out.println(" ");
+		System.out.println("O salário Liquido do "+Funcionario01+"é: "+Funcionario01.salarioLiquido());
+		
+		System.out.println("O aumento salarial foi de "+Funcionario01.Aumento);
+		System.out.println("O salário com o aumento é de "+Funcionario01.aumentaSalario());
+		System.out.println("");
+		
+		Funcionario Funcionario02 = new Funcionario();
+
+		Funcionario02.Nome = "Vagner";
+		System.out.print("Digite o salário do "+Funcionario02.Nome+" : ");
+		Funcionario02.SalarioBruto = in.nextDouble() ;
+		Funcionario02.Imposto = Funcionario02.SalarioBruto * 8 /100 ;
+		System.out.println("O Salário Liquido do "+Funcionario02+" é: "+Funcionario02.salarioLiquido());
+		
+		System.out.print("Quanto quer aumentar o salario do"+Funcionario02+": ");
+		Funcionario02.Aumento = in.nextDouble();
+		System.out.println(" ");
+		
+		System.out.println("O salário Liquido do Vagner é: "+Funcionario02.salarioLiquido());
+		
+		System.out.println("O aumento salarial foi de "+Funcionario02.Aumento);
+		System.out.println("O salário com o aumento é de "+Funcionario02.aumentaSalario());
+		
+	}
+
+}

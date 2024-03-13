@@ -1,0 +1,11 @@
+
+public class Funcionario {
+	
+        String Nome;
+		double SalarioBruto, Imposto;
+		
+		public double calcularSalario() {
+
+		}
+		
+}

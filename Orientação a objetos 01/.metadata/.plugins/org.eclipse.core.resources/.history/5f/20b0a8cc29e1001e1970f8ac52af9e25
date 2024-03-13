@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner in = new Scanner(System.in);
+		
+		Funcionario Pedro = new Funcionario();
+		
+		System.out.print("Digite o salário bruto do Pedro: ");
+		Pedro.SalarioBruto = in.nextDouble();
+		Pedro.Nome = "Pedro";
+		Pedro.Imposto = Pedro.SalarioBruto * 15 / 100 ;
+		
+		System.out.println("O salário Liquido do Pedro é: "+Pedro.salarioLiquido());
+		
+		System.out.print("Quanto quer aumentar o salario do Pedro: ");
+		Pedro.Aumento = in.nextDouble();
+		
+		
+		Funcionario Vagner = new Funcionario();
+
+		Vagner.Nome = "Vagner";
+		System.out.print("Digite o salário do "+Vagner.Nome+": ");
+		Vagner.SalarioBruto = in.nextDouble() ;
+		Vagner.Imposto = Vagner.SalarioBruto * 8 /100 ;
+		System.out.print("O Salário Liquido do Vagner é: "+Vagner.salarioLiquido());
+	}
+
+}

@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner in = new Scanner(System.in);
+		
+		Funcionario Pedro = new Funcionario();
+		
+		System.out.println("Digite o salário bruto do Pedro: ");
+		Pedro.SalarioBruto = in.nextDouble();
+		Pedro.Nome = "Pedro";
+		Pedro.Imposto = 10 ;
+		
+		Funcionario Vagner = new Funcionario();
+		
+		Vagner.Nome = "Vagner";
+		Vagner.SalarioBruto = 1500 ;
+		Vagner.Imposto = 10 ;
+	}
+
+}

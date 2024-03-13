@@ -1,0 +1,16 @@
+
+public class Funcionario {
+	
+        String Nome;
+		double SalarioBruto, Imposto, AumentarSalario;
+		
+		public double salarioLiquido() {
+			
+			return SalarioBruto - Imposto ;
+
+		}
+		double aumentaSalario() {
+			
+			return SalarioBruto - Imposto + AumentarSalario; 
+		}
+}
