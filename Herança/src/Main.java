@@ -1,31 +1,38 @@
-import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Jogo jogo = new Jogo();
+		jogo.init("Minecraft",1.99,"Mojang");
 		
-		Scanner in = new Scanner (System.in);
+		jogo.printDetails();
 		
-		Carro carro = new Carro ("Honda","Civic","Preto",1999, 4);
+		System.out.println("-------------------------------------");
 		
-		System.out.println(carro.mostraResultadoCarro()n\);
+		JogoEletronico jogoeletronico = new JogoEletronico();
 		
-		Carro carro2 = new Carro ("Mitsubishi","Eclipse","Preto",1999, 4);
-		
-		System.out.println(carro2.mostraResultadoCarro());
-		
-		Carro carro3 = new Carro ("Toyota","Supra","Preto",1999, 4);
-		
-		System.out.println(carro3.mostraResultadoCarro());
+		jogoeletronico.init("Supermarket Simulator", 0.99 , "Carrefour","Google", "Dispostivo Móvel" , 0);
 		
 		
-		Moto moto = new Moto("Honda", "CG 160 Titan", "red",2004,162.7);
+		jogoeletronico.printDetails();
 		
-		System.out.println(moto.mostraResultadoMoto());
-		
-		
+		System.out.println(jogoeletronico.jogarOnline());
 
+
+		System.out.println("-------------------------------------");
+		
+		JogoFisico jogofisico = new JogoFisico();
+		
+		jogofisico.init("Monopoly: Rio de janeiro", 1200.0 , "Grow", 5, 20);
+		
+		jogofisico.printDetails();
+		
+		
+		System.out.printf("%.2f horas", jogofisico.calcularTempoTotal(20, 7));
+	
+		
+		
 	}
 
 }
